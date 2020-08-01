@@ -11,6 +11,7 @@ $(window).on('load', function () {
 });
 
 let xml = ["<h1>Loading Data Please Wait</h1>"]
+$(".quickPosts").html(xml.join(''))
 let colors = ["alert-primary", "alert-secondary", "alert-success", "alert-danger", "alert-warning", "alert-info", "alert-dark"]
 let prev = 0
 let newn = 0
@@ -30,7 +31,7 @@ function getRandomInt(max) {
 
 loadData = () => {
     $.get('https://www.tecinpact.tk/index.xml', function (data) {
-        xml = [];
+        xml = ["<h1>Quick Post View</h1><br>"];
         $(data).find("item").each(function () { // or "item" or whatever suits your feed
             var el = $(this);
 
@@ -57,6 +58,7 @@ loadData = () => {
 let QP = 0;
 
 viewQP = () => {
+    loadData();
     if (QP == 0) {
         $(".links").fadeOut(500);
         $(".quickPosts").fadeIn(500);
