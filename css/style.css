@@ -1,3 +1,10 @@
+* {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
 .content {
   display: none;
 }
@@ -24,7 +31,7 @@
 }
 
 .content .links .alert {
-  max-width: 550px;
+  max-width: 600px;
 }
 
 .content .links .alert .media img {
@@ -39,7 +46,7 @@
 }
 
 .content .quickPosts .alert {
-  max-width: 550px;
+  max-width: 600px;
 }
 
 .content .quickPosts .alert .media img {
