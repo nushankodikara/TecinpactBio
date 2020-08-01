@@ -6,3 +6,13 @@ use `-b` before image extension to get the dark icons
 
 >       telegram.png    #Day Theme
 >       telegram-b.png  #Night Theme
+
+And Always remember if you're using XML RSS feed, you have to add this line of code to your `.htaccess` file in your server, or else you'll be greeted with a cute little CORS Error.
+
+>       Access-Control-Allow-Origin: *
+
+or 
+
+>       Access-Control-Allow-Origin: https://your.hosting.url
+
+As shown in [This Guide](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Access-Control-Allow-Origin)
