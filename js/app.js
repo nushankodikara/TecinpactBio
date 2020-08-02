@@ -58,7 +58,9 @@ loadData = () => {
 let QP = 0;
 
 viewQP = () => {
-    loadData();
+    setTimeout(function () {
+        loadData();
+    }, 2000);
     if (QP == 0) {
         $(".links").fadeOut(500);
         $(".quickPosts").fadeIn(500);
