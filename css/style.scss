@@ -16,6 +16,39 @@
             width: 200px;
             border-radius: 50%;
         }
+
+        h1 {
+
+            span {
+                animation: coloranimation 15s infinite;
+
+                @keyframes coloranimation {
+                    0% {
+                        background-color: #845EC2;
+                    }
+
+                    20% {
+                        background-color: #D65DB1;
+                    }
+
+                    40% {
+                        background-color: #FF6F91;
+                    }
+
+                    60% {
+                        background-color: #FF9671;
+                    }
+
+                    80% {
+                        background-color: #FFC75F;
+                    }
+
+                    100% {
+                        background-color: #845EC2;
+                    }
+                }
+            }
+        }
     }
 
     .links {
