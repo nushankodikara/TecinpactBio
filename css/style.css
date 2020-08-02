@@ -10,7 +10,7 @@
 }
 
 .content .jumbotron {
-  background: url(https://pixabay.com/get/53e4d6424357ac14f6d1867dda29347d133edbe4534c704c7c2979dd914dc45a_1920.png);
+  background: url(../img/background.png);
   background-position: center;
   background-size: cover;
   display: -ms-grid;
